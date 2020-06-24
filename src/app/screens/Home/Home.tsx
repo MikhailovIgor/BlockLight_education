@@ -1,9 +1,12 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+
+import {View, Text, Button, Modal} from 'react-native';
+
+
 const Home = () => {
   return (
     <View style={{flex: 1}}>
-      <Text>Home screen</Text>
+
     </View>
   );
 };
