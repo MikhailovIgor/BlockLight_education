@@ -112,7 +112,7 @@ const NavigationController = () => {
             drawerStyle={{
                 width: 240,
             }}
-            drawerContent={CustomDrawerContent}
+            drawerContent={()=><CustomDrawerContent/>}
         >
             <Draver.Screen name={'Main'} component={StackNavigation}/>
             <Draver.Screen name={'Settings'} component={UserPage}/>

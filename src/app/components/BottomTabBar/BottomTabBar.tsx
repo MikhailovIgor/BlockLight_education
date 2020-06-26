@@ -14,7 +14,7 @@ const BottomTabBar = () => {
         <View style={styles.bar}>
             <View style={styles.buttons}>
                 <TouchableOpacity  style={styles.label} onPress={() =>{navigate('Home'); setFlag(!flag)} }>
-                    <Icon name={'home'} size={interfaceSize} color={flag? '#ffffff':selectedColor}
+                    <Icon name={'home'} size={interfaceSize} color={'#ffffff'}
                           solid/>
                     <Text style={styles.textStyle}>Home</Text>
                 </TouchableOpacity>
