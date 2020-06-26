@@ -1,16 +1,16 @@
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
 import styles from './style';
-import React from 'react';
-import UserModal from "../UserModal/UserModal";
-import {View, Image, Alert} from 'react-native';
+import React, {useState,useEffect} from 'react';
+import {View, Image} from 'react-native';
+
+import {openDrawer,closeDrawer,navigate} from '../../navigation/RootNavigation/RootNavigation';
 
 const ToolBar = () => {
     const interfaceSize: number = 27;
     const test = (): void => {
         console.log("press on ");
     }
-
     return (
         <View style={styles.toolbar}>
             <Image style={styles.logo} source={require('../../assets/images/logo.png')}/>
@@ -19,9 +19,10 @@ const ToolBar = () => {
                       solid/>
                 <Icon style={{marginEnd: -8}} name={'comment-dots'} size={interfaceSize} color={'#ffffff'}/>
                 <Icon style={{height: interfaceSize, borderLeftWidth: 1, borderLeftColor: 'white', paddingLeft: 13}}
-
+                            onPress={openDrawer}
                       name={'user-circle'} size={interfaceSize} color={'#ffffff'} solid/>
             </View>
+
         </View>
     );
 };

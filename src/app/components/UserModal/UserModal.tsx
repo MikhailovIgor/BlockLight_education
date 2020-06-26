@@ -1,32 +1,26 @@
 
 import React from 'react';
 import styles from './styles';
-import {Button, Modal, Text, View} from 'react-native';
+import {Button, Modal, Text, View, TouchableHighlight} from 'react-native';
 
 type UserModalProps={
-    transparent:boolean,
     visible:boolean,
-    style:any,
+    singOutAction:()=>void,
 }
 
-const UserModal = ({transparent, visible,style}: UserModalProps) => {
-    const singOutAction = () => {
-        console.log('Sing Out press');
-    };
+const UserModal = ({ visible,singOutAction }: UserModalProps) => {
     return (
-        <Modal
-        transparent={transparent}
-        visible={visible}
-
-        >
-            <View style={styles.background}>
+        <View >
+            <Modal
+                transparent={true}
+                visible={visible} >
                 <View style={styles.body}>
-                    <Text>Modal User settings</Text>
-                    <Button title={'Sing Out'} onPress={singOutAction}/>
+                    <Text>Hi</Text>
                 </View>
-            </View>
-        </Modal>
+                <Button title={'close'} onPress={singOutAction}/>
+            </Modal>
 
+        </View>
     );
 };
 export default UserModal;
