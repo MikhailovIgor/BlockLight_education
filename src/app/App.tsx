@@ -12,8 +12,6 @@ import ToolBar from './components/ToolBar/ToolBar';
 import NavigationController from './navigation/NavigationController/NavigationController';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import SplashScreen from 'react-native-splash-screen';
-
-
 import {navigationRef,isReadyRef} from './navigation/RootNavigation/RootNavigation';
 import BottomTabBar from './components/BottomTabBar/BottomTabBar';
 //тут будут все цвета для глобального доступа
