@@ -8,14 +8,14 @@
 import 'react-native-gesture-handler';
 import React, {useState,useEffect} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import ToolBar from '../app/components/ToolBar/ToolBar';
+import ToolBar from './components/ToolBar/ToolBar';
 import NavigationController from './navigation/NavigationController/NavigationController';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import SplashScreen from 'react-native-splash-screen';
-import {BottomTabBar} from "@react-navigation/bottom-tabs";
 
-import {navigationRef,isReadyRef} from '../app/navigation/RootNavigation/RootNavigation';
-import BottomTabBar from "./components/BottomTabBar/BottomTabBar";
+
+import {navigationRef,isReadyRef} from './navigation/RootNavigation/RootNavigation';
+import BottomTabBar from './components/BottomTabBar/BottomTabBar';
 //тут будут все цвета для глобального доступа
 EStyleSheet.build({
     $toolbarColor:'#2C2C2C',

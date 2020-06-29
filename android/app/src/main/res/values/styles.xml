@@ -7,12 +7,12 @@
     </style>
 
     <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@drawable/bakcground_splesh</item>
-        <item name="android:statusBarColor">@color/purple</item>
-        <item name="colorPrimaryDark">@color/purple</item>
+        <item name="android:windowBackground">@mipmap/logo</item>
+        <item name="android:statusBarColor">@color/primaty</item>
+        <item name="colorPrimaryDark">@color/primaty</item>
     </style>
 
     <style name="SplashScreenStatusBarTheme" parent="SplashScreen_SplashTheme">
-        <item name="colorPrimaryDark">@color/purple</item>
+        <item name="colorPrimaryDark">@color/primaty</item>
     </style>
 </resources>

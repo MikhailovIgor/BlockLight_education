@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/purple"/>
+    <item android:drawable="@color/primaty"/>
         <item
-            android:width="200dp"
-            android:height="200dp"
+            android:width="161dp"
+            android:height="49dp"
             android:drawable="@mipmap/logo"
             android:gravity="center"
             />
